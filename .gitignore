@@ -1,0 +1,94 @@
+# ============================================================
+# OptiStock AI — Root .gitignore
+# ============================================================
+
+# ── Environment & Secrets ───────────────────────────────────
+**/.env
+**/.env.*
+*.env
+!**/.env.example
+
+# ── Python Virtual Environments ─────────────────────────────
+.venv/
+**/.venv/
+venv/
+**/venv/
+env/
+**/env/
+ENV/
+**/ENV/
+
+# ── Python Bytecode & Caches ────────────────────────────────
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# ── Python Build & Packaging Outputs ────────────────────────
+build/
+**/build/
+*.egg-info/
+**/*.egg-info/
+*.egg
+
+# ── Machine Learning Artifacts & Serialized Models ──────────
+*.joblib
+**/*.joblib
+*.pkl
+*.pickle
+!**/saved_models/.gitkeep
+
+# ── Testing & Caches ────────────────────────────────────────
+**/.pytest_cache/
+.coverage
+htmlcov/
+**/.coverage.*
+**/.hypothesis/
+
+# ── Node.js & Frontend Build Outputs ────────────────────────
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-ssr/
+**/dist-ssr/
+*.tsbuildinfo
+**/.tmp/
+
+# ── Logs & Debug Files ──────────────────────────────────────
+*.log
+**/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── OS & Local Developer Artifacts ──────────────────────────
+.DS_Store
+**/.DS_Store
+Thumbs.db
+**/Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# ── IDEs & Editors ──────────────────────────────────────────
+.vscode/
+**/.vscode/
+!.vscode/extensions.json
+.idea/
+**/.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# ── Local Database Dumps & Certificates ─────────────────────
+*.sql
+*.dump
+*.sqlite
+*.sqlite3
+*.pem
+*.key
+*.pfx
+*.cert
